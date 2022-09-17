@@ -20,7 +20,7 @@ export class App extends Component {
   countPositiveFeedbackPercentage = () => {
     const { good } = this.state;
     const total = this.countTotalFeedback();
-    return `${Math.ceil((good * 100) / total)}%`;
+    return Math.ceil((good * 100) / total);
   };
 
   onLeaveFeedback = option => {
@@ -32,7 +32,7 @@ export class App extends Component {
   render() {
     const { good, neutral, bad } = this.state;
     return (
-      <Box height="100vh" p="30px" bg="muted" as="main">
+      <Box height="100vh" p="30px" bg="background" as="main">
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={['good', 'neutral', 'bad']}
