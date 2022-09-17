@@ -5,12 +5,13 @@ import { Button } from './FeedbackOptions.styled';
 
 export class FeedbackOptions extends Component {
   render() {
+    const { options, onLeaveFeedback } = this.props;
     return (
       <Box display="flex" gridGap={4} mb={5}>
-        {this.props.options.map(option => (
+        {options.map(option => (
           <Button
             type="button"
-            onClick={() => this.props.onLeaveFeedback(option)}
+            onClick={() => onLeaveFeedback(option)}
             key={option}
           >
             {option}

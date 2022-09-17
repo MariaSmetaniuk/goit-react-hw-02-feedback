@@ -8,10 +8,11 @@ export class Section extends Component {
   };
 
   render() {
+    const { title, children } = this.props;
     return (
       <section>
-        <Title>{this.props.title}</Title>
-        {this.props.children}
+        <Title>{title}</Title>
+        {children}
       </section>
     );
   }

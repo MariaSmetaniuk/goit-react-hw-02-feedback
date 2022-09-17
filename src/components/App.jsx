@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import { GlobalStyle } from './GlobalStyle';
-import { Section } from './Section/Section';
 import { Box } from './Box';
+import { Section } from './Section/Section';
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 import { Statistics } from './Statistics/Statistics';
 
@@ -16,10 +16,11 @@ export class App extends Component {
     const { good, neutral, bad } = this.state;
     return good + neutral + bad;
   };
+
   countPositiveFeedbackPercentage = () => {
     const { good } = this.state;
     const total = this.countTotalFeedback();
-    return Math.ceil((good * 100) / total);
+    return `${Math.ceil((good * 100) / total)}%`;
   };
 
   onLeaveFeedback = option => {

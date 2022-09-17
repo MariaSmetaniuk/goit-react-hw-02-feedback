@@ -4,7 +4,8 @@ import { NotificationStyled } from './Notification.styled';
 
 export class Notification extends Component {
   render() {
-    return <NotificationStyled>{this.props.message}</NotificationStyled>;
+    const { message } = this.props;
+    return <NotificationStyled>{message}</NotificationStyled>;
   }
 }
 
