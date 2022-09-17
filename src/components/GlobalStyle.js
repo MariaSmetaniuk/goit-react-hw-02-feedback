@@ -14,8 +14,9 @@ export const GlobalStyle = createGlobalStyle`
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
-  h1,h2,h3,h4,h5,h6,p {
+  h1,h2,h3,h4,h5,h6,p, ul {
     margin: 0;
+    padding: 0;
   }
   ul {
     list-style: none;
