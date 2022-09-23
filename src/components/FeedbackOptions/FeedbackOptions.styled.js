@@ -4,9 +4,9 @@ export const Button = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  padding: ${p => p.theme.space[3]}px;
-  font-size: ${p => p.theme.fontSizes.m};
+  width: 80px;
+  padding: ${p => p.theme.space[2]}px;
+  font-size: ${p => p.theme.fontSizes.s};
   font-weight: 500;
   text-transform: capitalize;
   cursor: pointer;
@@ -14,7 +14,7 @@ export const Button = styled.button`
   background-color: ${p => p.theme.colors.primary};
   border: ${p => p.theme.borders.none};
   border-radius: ${p => p.theme.radii.sm};
-  box-shadow: 2px 2px 14px -3px rgba(35, 35, 35, 0.64);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
