@@ -14,7 +14,7 @@ export const Button = styled.button`
   background-color: ${p => p.theme.colors.primary};
   border: ${p => p.theme.borders.none};
   border-radius: ${p => p.theme.radii.sm};
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  box-shadow: ${p=>p.theme.shadows.primary};
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 

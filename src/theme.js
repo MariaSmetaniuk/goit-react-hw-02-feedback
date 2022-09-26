@@ -41,4 +41,10 @@ export const theme = {
     lg: '16px',
     round: '50%',
   },
+  shadows: {
+    primary: 'rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px',
+    secondary:
+      'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px',
+    text: '2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3)',
+  },
 };

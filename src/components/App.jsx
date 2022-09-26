@@ -32,22 +32,32 @@ export class App extends Component {
   render() {
     const { good, neutral, bad } = this.state;
     return (
-      <Box height="100vh" p="30px" bg="muted" as="main">
-        <Section title="Please leave feedback">
-          <FeedbackOptions
-            options={['good', 'neutral', 'bad']}
-            onLeaveFeedback={this.onLeaveFeedback}
-          />
-        </Section>
-        <Section title="Statistics">
-          <Statistics
-            good={good}
-            neutral={neutral}
-            bad={bad}
-            total={this.countTotalFeedback()}
-            positivePercentage={this.countPositiveFeedbackPercentage()}
-          />
-        </Section>
+      <Box p={5} as="main">
+        <Box
+          width="430px"
+          px={4}
+          mx="auto"
+          bg="white"
+          borderRadius="md"
+          boxShadow="primary"
+          color="text"
+        >
+          <Section title="Please leave feedback">
+            <FeedbackOptions
+              options={['good', 'neutral', 'bad']}
+              onLeaveFeedback={this.onLeaveFeedback}
+            />
+          </Section>
+          <Section title="Statistics">
+            <Statistics
+              good={good}
+              neutral={neutral}
+              bad={bad}
+              total={this.countTotalFeedback()}
+              positivePercentage={this.countPositiveFeedbackPercentage()}
+            />
+          </Section>
+        </Box>
         <GlobalStyle />
       </Box>
     );

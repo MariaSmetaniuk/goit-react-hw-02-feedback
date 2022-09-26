@@ -7,7 +7,7 @@ export class FeedbackOptions extends Component {
   render() {
     const { options, onLeaveFeedback } = this.props;
     return (
-      <Box display="flex" gridGap={4} mb={5}>
+      <Box display="flex" gridGap={4}>
         {options.map(option => (
           <Button
             type="button"
